@@ -31,7 +31,7 @@ function partition(arr, low, high) {
 }
 
 function quickSort(arr, low, high) {
-	console.log('qs -->  low: ', low, 'high: ', high);
+	console.log('qs -->  low: ', low,	 'high: ', high);
 	if (low < high) {
 		let partita = partition(arr, low, high);
 		console.log('partita: ', partita);
@@ -40,6 +40,9 @@ function quickSort(arr, low, high) {
 		console.log('qs 2');
 		quickSort(arr, partita + 1, high);
 	}
+
+	// jika NOT low < high, maka lewat sini, dan panggil quickSort()  dgn argument terpenuhi 
+	console.log('low < high is FALSE');
 
 	// return arr;
 }
