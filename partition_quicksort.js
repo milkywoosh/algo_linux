@@ -47,7 +47,7 @@ function quickSort(arr, low, high) {
 	// return arr;
 }
 
-let arr = [8,7,6,5,4,3,2,1,2,2];// if there are duplicate element it will create be bug ! solution
+let arr = [8,7,6,5,4,3,2,1,2,2];
 // let arr = [10, 80, 30, 90, 40, 50, 70]
 quickSort(arr, 0, arr.length-1);
 console.log('last arr: ', arr);
