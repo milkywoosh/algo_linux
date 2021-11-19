@@ -31,3 +31,27 @@ function  removeDuplicateArray(nums) {
 let arr = [1,1,1,2,2,3,3,4,4,5,5,5,5,6,6,6];
 removeDuplicateArray(arr)
 console.log(arr);
+
+
+var getConcatenation = function(nums) {
+    let ans = [];
+    let count = 0;
+
+	while (ans.length !== 2*nums.length) {
+	    
+	    
+	    if (ans.length === nums.length) {
+	        count = 0
+	        ans.push(nums[count]);
+	        count++
+	    } else {
+	        ans.push(nums[count]);
+	        count++;
+	    }
+        
+		    
+		   
+	}
+
+    return ans
+};
